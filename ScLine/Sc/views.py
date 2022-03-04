@@ -6,5 +6,5 @@ def index(request):
     return render(request, 'index.html')
 
 def sclineNew(request):
-    form = ScLineUsr()
-    return render(request, '', {'form': form})
+    form = ScLineUsrForm()
+    return render(request, 'ScForm.html', {'form': form})
